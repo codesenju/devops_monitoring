@@ -21,10 +21,9 @@ Promtail | 2.0.0
 ## Prereq:
 -	OpenJDK 1.8
 -	Elasticsearch 6.x
-  -	Binary/RPM - https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13
-  - Steps - https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html
--	MongoDB 4.2
-  -	Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+  -	[Binary/RPM](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13)
+  - [Steps](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
+-	[MongoDB 4.2](Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
 -	File system path
   -	Configuration /etc/mongod.conf
   -	Data files	/var/lib/mongodb/
@@ -32,11 +31,9 @@ Promtail | 2.0.0
 
 ## Sending in log data
 ###	Ingest syslog 
-###	Ingest from files - https://docs.graylog.org/en/3.3/pages/sending/files.html
--	Graylog Sidecar 1.0.x
-https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar
--	Filebeat 6.8.13 (Uses elasticsearch yum repo)
-#### Binary/RPM - https://www.elastic.co/downloads/past-releases/filebeat-6-8-13
+###	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
+-	[Graylog Sidecar 1.0.x](https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar)
+-	[Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
 
 # Sending log data to Grafana
 
@@ -54,9 +51,8 @@ https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar
 ###	Elasticsearch
 
 # Videos
-22. Graylog 3.0 Sidecar Windows Configuration
-https://www.youtube.com/watch?v=oJ08QadvM88
-23. Graylog 3.0 Sidecar Linux Configuration 
-https://www.youtube.com/watch?v=gjXXs0_fBzU
+- ### [Graylog 3.0 Sidecar Windows Configuration](https://www.youtube.com/watch?v=oJ08QadvM88)-
+- ### [Graylog 3.0 Sidecar Linux Configuration](https://www.youtube.com/watch?v=gjXXs0_fBzU)
 
-How To Install Graylog 3 with Elasticsearch 6.x on CentOS 7
+# More references
+[How To Install Graylog 3 with Elasticsearch 6.x on CentOS 7](https://computingforgeeks.com/how-to-install-graylog-with-elasticsearch-on-centos-7/)
