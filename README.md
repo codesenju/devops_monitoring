@@ -25,7 +25,7 @@ Promtail | 2.0.0 | 9080
 
 ## Prereq:
 - ##	OpenJDK 1.8
-- ##	Elasticsearch 6.x
+- ##	Elasticsearch 6.8.13
   - [Installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
   -	[Releases Binary/RPM](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13)
 - ##	[MongoDB 4.2](Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
@@ -37,16 +37,16 @@ Promtail | 2.0.0 | 9080
 # Sending in log data
 ###	Ingest syslog 
 ###	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
-### Graylog-sidecar	
+### Graylog-sidecar	1.0.2
  - [Installation guide](https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar)
- - [Releases - Binary/RPM](https://github.com/Graylog2/collector-sidecar/releases)
+ - [Releases - Binary/RPM](https://github.com/Graylog2/collector-sidecar/releases/tag/1.0.2)
 ### [Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
 
 # Parsing data to Grafana
 
 ### Installing Grafana 7.3.0
 -	[Installation guide](https://grafana.com/docs/grafana/latest/installation/rpm/)
--	[Binaries](https://grafana.com/grafana/download/7.3.0?platform=linux)
+-	[Releases](https://grafana.com/grafana/download/7.3.0?platform=linux)
 ### Prometheus
 - [Download](https://prometheus.io/download/)
 ```bash
@@ -54,15 +54,14 @@ Promtail | 2.0.0 | 9080
 ```
 ###	Grafana Loki 2.0.0
 - [Installation guide](https://github.com/grafana/loki)
-- [Releases](https://github.com/grafana/loki/releases)
+- [Releases](https://github.com/grafana/loki/releases/tag/v2.0.0)
 
 ###	[Loki Installation](https://grafana.com/docs/loki/latest/installation/local/)
 ###	[Promtail - Getting started, get logs into loki.](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)
 ###	Elasticsearch
 ### node_exporter
 - [Installation guide](https://geekflare.com/prometheus-grafana-setup-for-linux/)
-- [Releases]()
-
+- [Releases](https://github.com/prometheus/node_exporter/releases/tag/v1.0.1)
 
 # Videos
 - ### [Graylog 3.0 Sidecar Windows Configuration](https://www.youtube.com/watch?v=oJ08QadvM88)-
