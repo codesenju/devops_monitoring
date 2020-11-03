@@ -42,7 +42,7 @@ Promtail | 2.0.0 | 9080
  - [Releases - Binary/RPM](https://github.com/Graylog2/collector-sidecar/releases)
 ### [Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
 
-# Sending log data to Grafana
+# Parsing data to Grafana
 
 ### Installing Grafana 7.3.0
 -	[Installation guide](https://grafana.com/docs/grafana/latest/installation/rpm/)
@@ -52,16 +52,17 @@ Promtail | 2.0.0 | 9080
 ```bash
 ./prometheus --config.file=your_config.yml
 ```
-
-
 ###	Grafana Loki 2.0.0
 - [Installation guide](https://github.com/grafana/loki)
 - [Releases](https://github.com/grafana/loki/releases)
 
-
 ###	[Loki Installation](https://grafana.com/docs/loki/latest/installation/local/)
 ###	[Promtail - Getting started, get logs into loki.](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)
 ###	Elasticsearch
+### node_exporter
+- [Installation guide](https://geekflare.com/prometheus-grafana-setup-for-linux/)
+- [Releases]()
+
 
 # Videos
 - ### [Graylog 3.0 Sidecar Windows Configuration](https://www.youtube.com/watch?v=oJ08QadvM88)-
