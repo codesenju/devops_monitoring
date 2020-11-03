@@ -58,7 +58,6 @@ Promtail | 2.0.0 | 9080
 
 ###	[Loki Installation](https://grafana.com/docs/loki/latest/installation/local/)
 ###	[Promtail - Getting started, get logs into loki.](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)
-###	Elasticsearch
 ### node_exporter
 - [Installation guide](https://geekflare.com/prometheus-grafana-setup-for-linux/)
 - [Releases](https://github.com/prometheus/node_exporter/releases/tag/v1.0.1)
