@@ -1,28 +1,32 @@
 # devops_monitoring
 End to end monitoring
 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
-Installing Graylog 3.3
-https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html
-https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide
-Configuring /etc/graylog/server/server.conf
-sudo yum -y install epel-release
-sudo yum -y install pwgen
-pwgen -N 1 -s 96
+# Installing Graylog 3.3
+  * https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html
+  * https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide
+  * Configuring /etc/graylog/server/server.conf
+  * sudo yum -y install epel-release
+  * sudo yum -y install pwgen
+  * pwgen -N 1 -s 96
 
-Prereq:
+## Prereq:
 -	OpenJDK 1.8
 -	Elasticsearch 6.x
-o	Binary/RPM - https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13
-o	Steps - https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html
+  -	Binary/RPM - https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13
+  - Steps - https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html
 -	MongoDB 4.2
-o	Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
-o	File system path
-	Configuration /etc/mongod.conf
-	Data files	/var/lib/mongodb/
-	Log files	/var/log/mongodb/
+  -	Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+-	File system path
+  -	Configuration /etc/mongod.conf
+  -	Data files	/var/lib/mongodb/
+  -	Log files	/var/log/mongodb/
 
-Sending in log data
+## Sending in log data
 -	Ingest syslog 
 -	Ingest from files - https://docs.graylog.org/en/3.3/pages/sending/files.html
 o	Graylog Sidecar 1.0.x
