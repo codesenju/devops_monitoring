@@ -15,9 +15,9 @@ Promtail | 2.0.0
   - [RPM](https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html)
   - [Installation](https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide)
   ## Configuring /etc/graylog/server/server.conf
-   ```shell sudo yum -y install epel-release``` \n
-  ```shell sudo yum -y install pwgen```
-  ```bash pwgen -N 1 -s 96```
+  * ```shell sudo yum -y install epel-release```
+  * ```shell sudo yum -y install pwgen```
+  * ```bash pwgen -N 1 -s 96```
 
 ## Prereq:
 - ##	OpenJDK 1.8
