@@ -19,12 +19,12 @@ Promtail | 2.0.0
   ### ```bash pwgen -N 1 -s 96```
 
 ## Prereq:
--	OpenJDK 1.8
--	Elasticsearch 6.x
+- ##	OpenJDK 1.8
+- ##	Elasticsearch 6.x
   -	[Binary/RPM](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13)
   - [Steps](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
--	[MongoDB 4.2](Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
--	File system path
+- ##	[MongoDB 4.2](Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
+- ## File system path
   -	Configuration /etc/mongod.conf
   -	Data files	/var/lib/mongodb/
   -	Log files	/var/log/mongodb/
