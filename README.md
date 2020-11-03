@@ -6,6 +6,7 @@ Graylog | 3.3 | 9000
 Graylog-sidecar | 1.0.2 | -
 Grafana | 7.3.0 | 3000
 Prometheus | 2.22.0 | 9090
+node_exporter | 1.0.1 | 9100
 Elasticsearch | 6.8.13 | 9200
 Filebeat | 6.8.13 | 5044
 MongoDB | 4.2 | 27017
