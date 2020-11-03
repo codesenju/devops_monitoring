@@ -3,14 +3,14 @@
 Software | Version | Default Port
 ------------ | ------------- | ------------
 Graylog | 3.3 | 9000
-Graylog-sidecar | 1.0.2 | 
+Graylog-sidecar | 1.0.2 | -
 Grafana | 7.3.0 | 3000
-Prometheus | 2.22.0 | 0
-Elasticsearch | 6.8.13 | 0
-Filebeat | 6.8.13 | 0
-MongoDB | 4.2 | 0
-Grafana Loki | 2.0.0 | 0
-Promtail | 2.0.0 | 0
+Prometheus | 2.22.0 | 9090
+Elasticsearch | 6.8.13 | 9200
+Filebeat | 6.8.13 | 5044
+MongoDB | 4.2 | 27017
+Grafana Loki | 2.0.0 | 3100
+Promtail | 2.0.0 | 9080
 
 # Installing Graylog 3.3
   - [RPM](https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html)
