@@ -7,12 +7,12 @@ Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
 # Installing Graylog 3.3
-  * https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html
-  * https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide
-  * Configuring /etc/graylog/server/server.conf
-  * sudo yum -y install epel-release
-  * sudo yum -y install pwgen
-  * pwgen -N 1 -s 96
+  - [RPM](https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html)
+  - [Installation](https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide)
+  ## Configuring /etc/graylog/server/server.conf
+  ### ```shell sudo yum -y install epel-release```
+  ### ```shell sudo yum -y install pwgen```
+  ### ```bash pwgen -N 1 -s 96```
 
 ## Prereq:
 -	OpenJDK 1.8
@@ -40,13 +40,14 @@ https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar
 -	Binaries - https://grafana.com/grafana/download/7.3.0?platform=linux
 -	Installation - https://grafana.com/docs/grafana/latest/installation/rpm/
 
--	Grafana Loki 2.0.0
-https://github.com/grafana/loki/releases
-https://github.com/grafana/loki
+##	Grafana Loki 2.0.0
+- [Guide](https://github.com/grafana/loki)
+- [Releases](https://github.com/grafana/loki/releases)
 
--	Loki - https://grafana.com/docs/loki/latest/installation/local/
--	Promtail - https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/
--	Elasticsearch
+
+###	[Loki Installation](https://grafana.com/docs/loki/latest/installation/local/)
+###	[Promtail - Getting started, get logs into loki.](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)
+###	Elasticsearch
 
 # Videos
 22. Graylog 3.0 Sidecar Windows Configuration
