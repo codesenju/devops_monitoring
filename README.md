@@ -31,20 +31,20 @@ Promtail | 2.0.0
        - log files	/var/log/mongodb/
 
 # Sending in log data
-##	Ingest syslog 
-##	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
-## Graylog-sidecar	
+###	Ingest syslog 
+###	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
+### Graylog-sidecar	
  - [Installation guide](https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar)
  - [Releases - Binary/RPM](https://github.com/Graylog2/collector-sidecar/releases)
-## [Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
+### [Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
 
 # Sending log data to Grafana
 
-## Installing Grafana 7.3.0
+### Installing Grafana 7.3.0
 -	Binaries - https://grafana.com/grafana/download/7.3.0?platform=linux
 -	Installation - https://grafana.com/docs/grafana/latest/installation/rpm/
 
-##	Grafana Loki 2.0.0
+###	Grafana Loki 2.0.0
 - [Guide](https://github.com/grafana/loki)
 - [Releases](https://github.com/grafana/loki/releases)
 
