@@ -27,14 +27,16 @@ Content in the first column | Content in the second column
   -	Log files	/var/log/mongodb/
 
 ## Sending in log data
--	Ingest syslog 
--	Ingest from files - https://docs.graylog.org/en/3.3/pages/sending/files.html
-o	Graylog Sidecar 1.0.x
+###	Ingest syslog 
+###	Ingest from files - https://docs.graylog.org/en/3.3/pages/sending/files.html
+-	Graylog Sidecar 1.0.x
 https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar
-o	Filebeat 6.8.13 (Uses elasticsearch yum repo)
-Binary/RPM - https://www.elastic.co/downloads/past-releases/filebeat-6-8-13
-Sending log data to Grafana
-Installing Grafana 7.3.0
+-	Filebeat 6.8.13 (Uses elasticsearch yum repo)
+#### Binary/RPM - https://www.elastic.co/downloads/past-releases/filebeat-6-8-13
+
+# Sending log data to Grafana
+
+## Installing Grafana 7.3.0
 -	Binaries - https://grafana.com/grafana/download/7.3.0?platform=linux
 -	Installation - https://grafana.com/docs/grafana/latest/installation/rpm/
 
@@ -42,10 +44,11 @@ Installing Grafana 7.3.0
 https://github.com/grafana/loki/releases
 https://github.com/grafana/loki
 
-o	Loki - https://grafana.com/docs/loki/latest/installation/local/
-o	Promtail - https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/
+-	Loki - https://grafana.com/docs/loki/latest/installation/local/
+-	Promtail - https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/
 -	Elasticsearch
-Videos
+
+# Videos
 22. Graylog 3.0 Sidecar Windows Configuration
 https://www.youtube.com/watch?v=oJ08QadvM88
 23. Graylog 3.0 Sidecar Linux Configuration 
