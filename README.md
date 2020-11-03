@@ -45,6 +45,11 @@ Promtail | 2.0.0
 ### Installing Grafana 7.3.0
 -	[Installation guide](https://grafana.com/docs/grafana/latest/installation/rpm/)
 -	[Binaries](https://grafana.com/grafana/download/7.3.0?platform=linux)
+### Prometheus
+- [Download](https://prometheus.io/download/)
+```bash
+./prometheus --config.file=your_config.yml
+```
 
 
 ###	Grafana Loki 2.0.0
