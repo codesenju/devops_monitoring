@@ -43,11 +43,12 @@ Promtail | 2.0.0
 # Sending log data to Grafana
 
 ### Installing Grafana 7.3.0
+-	[Installation guide](https://grafana.com/docs/grafana/latest/installation/rpm/)
 -	[Binaries](https://grafana.com/grafana/download/7.3.0?platform=linux)
--	[Installation](https://grafana.com/docs/grafana/latest/installation/rpm/)
+
 
 ###	Grafana Loki 2.0.0
-- [Guide](https://github.com/grafana/loki)
+- [Installation guide](https://github.com/grafana/loki)
 - [Releases](https://github.com/grafana/loki/releases)
 
 
