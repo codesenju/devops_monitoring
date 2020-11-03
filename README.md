@@ -1,10 +1,15 @@
 # devops_monitoring
 End to end monitoring
 
-First Header | Second Header
+Software | Version
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Graylog | 3.3
+Grafana | 7.3.0
+Elasticsearch | 6.8.13
+Filebeat | 6.8.13
+MongoDB | 4.2
+Grafana Loki | 2.0.0
+Promtail | 2.0.0
 
 # Installing Graylog 3.3
   - [RPM](https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html)
