@@ -3,6 +3,7 @@
 Software | Version
 ------------ | -------------
 Graylog | 3.3
+Graylog-sidecar | 1.0.2
 Grafana | 7.3.0
 Elasticsearch | 6.8.13
 Filebeat | 6.8.13
@@ -14,26 +15,28 @@ Promtail | 2.0.0
   - [RPM](https://docs.graylog.org/en/3.3/pages/installation/operating_system_packages.html)
   - [Installation](https://docs.graylog.org/en/3.3/pages/installation/os/centos.html#centosguide)
   ## Configuring /etc/graylog/server/server.conf
-  ### ```shell sudo yum -y install epel-release```
-  ### ```shell sudo yum -y install pwgen```
-  ### ```bash pwgen -N 1 -s 96```
+   ```shell sudo yum -y install epel-release``` \n
+  ```shell sudo yum -y install pwgen```
+  ```bash pwgen -N 1 -s 96```
 
 ## Prereq:
 - ##	OpenJDK 1.8
 - ##	Elasticsearch 6.x
-  -	[Binary/RPM](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13)
-  - [Steps](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
+  - [Installation guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
+  -	[Releases Binary/RPM](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-13)
 - ##	[MongoDB 4.2](Https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
     - ### File system path
        - Configuration /etc/mongod.conf
        - Data files	/var/lib/mongodb/
        - log files	/var/log/mongodb/
 
-## Sending in log data
-###	Ingest syslog 
-###	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
--	[Graylog Sidecar 1.0.x](https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar)
--	[Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
+# Sending in log data
+##	Ingest syslog 
+##	[Ingest from files](https://docs.graylog.org/en/3.3/pages/sending/files.html)
+## Graylog-sidecar	
+ - [Installation guide](https://docs.graylog.org/en/3.3/pages/sidecar.html#graylog-sidecar)
+ - [Releases - Binary/RPM](https://github.com/Graylog2/collector-sidecar/releases)
+## [Filebeat 6.8.13 Binary/RPM](https://www.elastic.co/downloads/past-releases/filebeat-6-8-13) - *Also uses Elasticsearch repo*
 
 # Sending log data to Grafana
 
