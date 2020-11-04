@@ -7,6 +7,7 @@ Graylog-sidecar | 1.0.2 | -
 Grafana | 7.3.0 | 3000
 Prometheus | 2.22.0 | 9090
 node_exporter | 1.0.1 | 9100
+process_exporter | 0.7.3 | 9256
 Elasticsearch | 6.8.13 | 9200
 Filebeat | 6.8.13 | 5044
 MongoDB | 4.2 | 27017
@@ -61,6 +62,10 @@ Promtail | 2.0.0 | 9080
 ### node_exporter
 - [Installation guide](https://geekflare.com/prometheus-grafana-setup-for-linux/)
 - [Releases](https://github.com/prometheus/node_exporter/releases/tag/v1.0.1)
+### process_exporter
+- [Installation guide](https://github.com/ncabatoff/process-exporter)
+- [Video](https://www.youtube.com/watch?v=hAsV9tmis_4)
+- [Releases](https://github.com/ncabatoff/process-exporter/releases/tag/v0.7.3)
 
 # Videos
 - ### [Graylog 3.0 Sidecar Windows Configuration](https://www.youtube.com/watch?v=oJ08QadvM88)-
