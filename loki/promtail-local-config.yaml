@@ -1,58 +1,22 @@
 server:
-  http_listen_port: 9081
+  http_listen_port: 9080
   grpc_listen_port: 0
 
 positions:
-  filename: /tmp/positions.yaml
+  filename: /<path>/positions.yaml
 
+#loki ip
 clients:
-  - url: http://localhost:3100/loki/api/v1/push
+  - url: http://<loki_host>:3100/loki/api/v1/push
 
 scrape_configs:
-- job_name: system
+- job_name: <hostname>
   static_configs:
   - targets:
       - localhost
     labels:
-      job: varlogs
-      __path__: /var/log/*log
-
-- job_name: system2
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: varlogs2
-      __path__: /var/log/*/*log
-
-- job_name: promtail_debug
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: promtail_debug
-      __path__: /opt/*/*.{log,txt}
-
-- job_name: logging
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: logging
-      __path__: /var/log/{messages,firewalld,cron} 
-
-- job_name: bamboo_system_logs
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: bamboo_system_logs
-      __path__: /opt/bamboo/atlassian/bamboo/atlassian-bamboo-7.1.2/logs/catalina.out
-
-- job_name: Bamboo build logs
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: bamboo_build_logs
-      __path__: /opt/bamboo/bamboo-home/xml-data/builds/*/download-data/build_logs/*log 
+      job: app_logs
+      env: <dev|int|qa|prod>
+      host: #
+      hostname: <hostname>
+      __path__: /<path>/*{log,txt}
