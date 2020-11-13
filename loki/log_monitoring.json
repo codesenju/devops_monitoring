@@ -973,13 +973,13 @@
           },
           {
             "selected": false,
-            "text": "/opt/dev/gliCacheLoad.jar.log",
-            "value": "/opt/dev/gliCacheLoad.jar.log"
+            "text": "/opt/dev/transaction6.jar.log",
+            "value": "/opt/dev/transaction6.jar.log"
           },
           {
             "selected": false,
-            "text": "/opt/dev/gliCacheLoad.txt",
-            "value": "/opt/dev/gliCacheLoad.txt"
+            "text": "/opt/dev/transaction6.txt",
+            "value": "/opt/dev/transaction6.txt"
           },
           {
             "selected": false,
