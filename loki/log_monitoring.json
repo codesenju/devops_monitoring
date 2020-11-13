@@ -1,4 +1,46 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_LOKI-LOGS",
+      "label": "Loki-logs",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "loki",
+      "pluginName": "Loki"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "7.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "graph",
+      "name": "Graph",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "logs",
+      "name": "Logs",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "loki",
+      "name": "Loki",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "stat",
+      "name": "Stat",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -15,8 +57,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 219,
-  "iteration": 1605275759476,
+  "id": null,
+  "iteration": 1605276444676,
   "links": [],
   "panels": [
     {
@@ -38,7 +80,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -152,12 +194,12 @@
     },
     {
       "aliasColors": {
-        "/opt/dev/bamboo-agent-home/logs/atlassian-bamboo.log": "rgb(34, 133, 189)"
+        "/opt/SVC_KafkaIGX_poc_dev/bamboo-agent-home/logs/atlassian-bamboo.log": "rgb(34, 133, 189)"
       },
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -265,7 +307,7 @@
       }
     },
     {
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "This is like 'tail -f' in a real time",
       "fieldConfig": {
         "defaults": {
@@ -291,7 +333,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "line {filename=\"/opt/dev/bamboo-agent-home/logs/atlassian-bamboo.log\", job=\"bamboo-agent\"}"
+              "options": "line {filename=\"/opt/SVC_KafkaIGX_poc_dev/bamboo-agent-home/logs/atlassian-bamboo.log\", job=\"bamboo-agent\"}"
             },
             "properties": [
               {
@@ -357,7 +399,7 @@
       "type": "row"
     },
     {
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "This is like 'tail -f' in a real time",
       "fieldConfig": {
         "defaults": {
@@ -383,7 +425,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "line {filename=\"/opt/dev/bamboo-agent-home/logs/atlassian-bamboo.log\", job=\"bamboo-agent\"}"
+              "options": "line {filename=\"/opt/SVC_KafkaIGX_poc_dev/bamboo-agent-home/logs/atlassian-bamboo.log\", job=\"bamboo-agent\"}"
             },
             "properties": [
               {
@@ -435,7 +477,7 @@
       "type": "logs"
     },
     {
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "Total Count: of $_search in the specified time range",
       "fieldConfig": {
         "defaults": {
@@ -507,7 +549,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "Total count of logs in the specified time range",
       "fieldConfig": {
         "defaults": {
@@ -582,7 +624,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -678,7 +720,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Loki-logs",
+      "datasource": "${DS_LOKI-LOGS}",
       "decimals": 0,
       "description": "",
       "fieldConfig": {
@@ -786,37 +828,17 @@
     "list": [
       {
         "allValue": "dev|int",
-        "current": {
-          "selected": false,
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": "Loki-logs",
+        "current": {},
+        "datasource": "${DS_LOKI-LOGS}",
         "definition": "label_values({env=~\".+\"}, env)",
         "hide": 0,
         "includeAll": true,
         "label": "Environment",
         "multi": false,
         "name": "_env",
-        "options": [
-          {
-            "selected": true,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "dev",
-            "value": "dev"
-          },
-          {
-            "selected": false,
-            "text": "int",
-            "value": "int"
-          }
-        ],
+        "options": [],
         "query": "label_values({env=~\".+\"}, env)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -828,47 +850,17 @@
       },
       {
         "allValue": "",
-        "current": {
-          "selected": false,
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": "Loki-logs",
+        "current": {},
+        "datasource": "${DS_LOKI-LOGS}",
         "definition": "label_values({host=~\".+\"}, host)",
         "hide": 0,
         "includeAll": true,
         "label": "host",
         "multi": false,
         "name": "_host",
-        "options": [
-          {
-            "selected": true,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "1",
-            "value": "1"
-          },
-          {
-            "selected": false,
-            "text": "2",
-            "value": "2"
-          },
-          {
-            "selected": false,
-            "text": "3",
-            "value": "3"
-          },
-          {
-            "selected": false,
-            "text": "5",
-            "value": "5"
-          }
-        ],
+        "options": [],
         "query": "label_values({host=~\".+\"}, host)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -880,125 +872,17 @@
       },
       {
         "allValue": null,
-        "current": {
-          "selected": true,
-          "tags": [],
-          "text": "All",
-          "value": [
-            "$__all"
-          ]
-        },
-        "datasource": "Loki-logs",
+        "current": {},
+        "datasource": "${DS_LOKI-LOGS}",
         "definition": "label_values({filename=~\".+\"}, filename)",
         "hide": 0,
         "includeAll": true,
         "label": "Filename",
         "multi": true,
         "name": "_filename",
-        "options": [
-          {
-            "selected": true,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction5.jar.log",
-            "value": "/opt/dev/transaction5.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction5.txt",
-            "value": "/opt/dev/transaction5.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.jar.2log",
-            "value": "/opt/dev/transaction4.jar.2log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.jar.3log",
-            "value": "/opt/dev/transaction4.jar.3log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.jar.4log",
-            "value": "/opt/dev/transaction4.jar.4log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.jar.5log",
-            "value": "/opt/dev/transaction4.jar.5log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.jar.log",
-            "value": "/opt/dev/transaction4.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction4.txt",
-            "value": "/opt/dev/transaction4.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction3.jar.log",
-            "value": "/opt/dev/transaction3.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction3.txt",
-            "value": "/opt/dev/transaction3.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/bamboo-agent-home/logs/atlassian-bamboo.log",
-            "value": "/opt/dev/bamboo-agent-home/logs/atlassian-bamboo.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/bamboo-agent-home/logs/emergency-atlassian-bamboo.log",
-            "value": "/opt/dev/bamboo-agent-home/logs/emergency-atlassian-bamboo.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction2.jar.log",
-            "value": "/opt/dev/transaction2.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction2.txt",
-            "value": "/opt/dev/transaction2.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction6.jar.log",
-            "value": "/opt/dev/transaction6.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction6.txt",
-            "value": "/opt/dev/transaction6.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction.jar.log",
-            "value": "/opt/dev/transaction.jar.log"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/transaction.txt",
-            "value": "/opt/dev/transaction.txt"
-          },
-          {
-            "selected": false,
-            "text": "/opt/dev/test.log",
-            "value": "/opt/dev/test.log"
-          }
-        ],
+        "options": [],
         "query": "label_values({filename=~\".+\"}, filename)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -1050,5 +934,5 @@
   "timezone": "",
   "title": "Log Monitoring",
   "uid": "dzZ0hXhMk",
-  "version": 121
+  "version": 122
 }
